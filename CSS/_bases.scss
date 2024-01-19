@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+.flex { display: flex; }
+.column { flex-direction: column; }
+.row { flex-direction: row;}
+.aic { align-items: center; }
+.ai-end { align-items: flex-end; }
+.jcc { justify-content: center; }
+.jc-se { justify-content: space-evenly; }
+.jc-sb { justify-content: space-between; }
+.jc-sa { justify-content: space-around; }
+
+body { width: 100vw; height: 100vh; }

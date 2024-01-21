@@ -12,10 +12,6 @@
   flex-direction: column;
 }
 
-.row {
-  flex-direction: row;
-}
-
 .aic {
   align-items: center;
 }
@@ -26,6 +22,10 @@
 
 .jcc {
   justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
 }
 
 .jc-se {
@@ -41,11 +41,10 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
 }
 
-body {
+.index-body {
   background: content-box no-repeat url("../assets/home/background-home-desktop.jpg");
   color: #FFF;
 }
@@ -55,11 +54,11 @@ header {
   height: 20%;
   padding-left: 5%;
 }
-header .logo {
+header .logo, header .logo2, header .logo3, header .logo4 {
   width: 10%;
   border-radius: 50%;
 }
-header .line hr {
+header .line hr, header .line2 hr, header .line3 hr, header .line4 hr {
   width: 30%;
   size: 1px;
   opacity: 0.2515;
@@ -68,26 +67,26 @@ header .line hr {
   left: 15%;
   z-index: 1;
 }
-header .navmenu {
+header .navmenu, header .navmenu2, header .navmenu3, header .navmenu4 {
   width: 60%;
   height: 60%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(40.7742271423px);
   transition: 0.5s ease-in-out;
 }
-header .navmenu ul {
+header .navmenu ul, header .navmenu2 ul, header .navmenu3 ul, header .navmenu4 ul {
   width: 100%;
 }
-header .navmenu li {
+header .navmenu li, header .navmenu2 li, header .navmenu3 li, header .navmenu4 li {
   list-style: none;
 }
-header .navmenu li:active {
+header .navmenu li:active, header .navmenu2 li:active, header .navmenu3 li:active, header .navmenu4 li:active {
   text-decoration: underline #FFF;
 }
-header .navmenu li:hover {
+header .navmenu li:hover, header .navmenu2 li:hover, header .navmenu3 li:hover, header .navmenu4 li:hover {
   text-decoration: underline #a5a4a4;
 }
-header .navmenu a {
+header .navmenu a, header .navmenu2 a, header .navmenu3 a, header .navmenu4 a {
   color: #FFF;
   font-family: Barlow Condensed;
   font-size: 16px;
@@ -129,7 +128,7 @@ header .navmenu a {
 }
 .container .text-contain p {
   color: #D0D6F9;
-  font-family: Barlow;
+  font-family: Barlow, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -139,18 +138,15 @@ header .navmenu a {
   width: 50%;
   height: 100%;
 }
-.container .explor-contain .explor-Hover {
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-}
-.container .explor-contain .explor-Idle {
-  width: 15rem;
-  height: 15rem;
+.container .explor-contain .explor {
+  width: 17rem;
+  height: 17rem;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 10%;
 }
-.container .explor-contain .explor-Idle span {
+.container .explor-contain .explor span {
   color: #0B0D17;
   font-family: Bellefair;
   font-size: 32px;
@@ -160,23 +156,284 @@ header .navmenu a {
   line-height: normal;
   letter-spacing: 2px;
 }
+.container .explor-contain .explor .explor:hover {
+  box-shadow: 0px 0px 0px 50px rgba(255, 255, 255, 0.262745098);
+}
+
+.destination-body {
+  background: content-box no-repeat url("../assets/destination/background-destination-desktop.jpg");
+  color: #FFF;
+}
+.destination-body .subtitle {
+  width: 45%;
+  height: 10%;
+}
+.destination-body .subtitle p {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  position: relative;
+  left: 10%;
+  text-transform: uppercase;
+}
+.destination-body .subtitle p b {
+  color: #a5a4a4;
+}
+.destination-body .container2 {
+  width: 100%;
+  height: 70%;
+}
+.destination-body .container2 .left-container {
+  width: 50%;
+  height: 100%;
+}
+.destination-body .container2 .right-container {
+  width: 50%;
+  height: 100%;
+}
+.destination-body .container2 .right-container ul {
+  width: 50%;
+}
+.destination-body .container2 .right-container li {
+  list-style: none;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container h1 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container p {
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.destination-body .container2 .right-container .down {
+  width: 60%;
+  height: 30%;
+}
+.destination-body .container2 .right-container .downbox {
+  width: 80%;
+}
+.destination-body .container2 .right-container hr {
+  width: 100%;
+  size: 1px;
+  opacity: 0.2515;
+  background: #383B4B;
+}
+.destination-body .container2 .right-container span {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+}
+.destination-body .container2 .right-container h4 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crew-body {
+  background: content-box no-repeat url("../assets/crew/background-crew-desktop.jpg");
+  color: #FFF;
+}
+.crew-body .container3 {
+  width: 100%;
+  height: 80%;
+}
+.crew-body .container3 .textcrew-container {
+  width: 55%;
+  height: 100%;
+}
+.crew-body .container3 .textcrew-container .TitleH4 {
+  width: 65%;
+  height: 10%;
+}
+.crew-body .container3 .textcrew-container .TitleH4 h4 {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.crew-body .container3 .textcrew-container .TitleH4 h4 b {
+  color: #a5a4a4;
+}
+.crew-body .container3 .textcrew-container .txtContain {
+  width: 65%;
+  height: 60%;
+}
+.crew-body .container3 .textcrew-container .txtContain h3 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.crew-body .container3 .textcrew-container .txtContain h2 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.crew-body .container3 .textcrew-container .txtContain p {
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.crew-body .container3 .textcrew-container .dots {
+  width: 65%;
+  height: 10%;
+  gap: 25px;
+}
+.crew-body .container3 .textcrew-container .dots .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(165, 164, 164, 0.3882352941);
+}
+.crew-body .container3 .textcrew-container .dots .dot1 {
+  background-color: #FFF;
+}
+.crew-body .container3 .imgcrew-container {
+  width: 45%;
+  height: 100%;
+}
+
+.technovehi-body {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  color: #FFF;
+}
+.technovehi-body .TitleH4 {
+  width: 50%;
+  height: 10%;
+}
+.technovehi-body .TitleH4 h4 {
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.technovehi-body .TitleH4 h4 b {
+  color: #a5a4a4;
+}
+.technovehi-body .container4 {
+  width: 100%;
+  height: 80%;
+}
+.technovehi-body .lauch-desc {
+  width: 60%;
+  height: 100%;
+}
+.technovehi-body .lauch-desc .numberboxers {
+  width: 20%;
+  height: 55%;
+}
+.technovehi-body .lauch-desc .numberboxers .numerbox {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid;
+}
+.technovehi-body .lauch-desc .numberboxers .numerbox span {
+  color: #FFF;
+  text-align: center;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.technovehi-body .lauch-desc .numberboxers .nb1 {
+  background-color: #FFF;
+  border: none;
+}
+.technovehi-body .lauch-desc .numberboxers .nb1 span {
+  color: #0B0D17;
+}
+.technovehi-body .lauch-desc .text-box {
+  width: 60%;
+  height: 55%;
+  margin-left: 5%;
+}
+.technovehi-body .lauch-desc .text-box span {
+  list-style: none;
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.technovehi-body .lauch-desc .text-box h2 {
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+}
+.technovehi-body .lauch-desc .text-box p {
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.technovehi-body .rocket-img {
+  width: 40%;
+  height: 100%;
+  padding-bottom: 2%;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 920px) {
-  .text-contain {
-    width: 50%;
-    height: 100%;
-  }
-  .text-contain h1 {
-    color: #FFF;
-    font-family: Bellefair;
-    font-size: 10px !important;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 5% 0;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

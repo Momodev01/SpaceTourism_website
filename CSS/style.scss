@@ -8,7 +8,7 @@
 //     src: url(../FONTS/Bellefair-Regular.ttf);
 // }
 
-body {
+.index-body {
     background: content-box no-repeat url("../assets/home/background-home-desktop.jpg");
     color: #FFF;
 }
@@ -19,7 +19,7 @@ header{
     padding-left: 5% ;
     // border: 1px solid;
 
-    .logo {
+    .logo, .logo2, .logo3, .logo4 {
         width: 10%;
         // height: 10%;
         border-radius: 50%;
@@ -30,7 +30,7 @@ header{
     //     height: 2rem;
     //     border: 1px solid;
     // }
-    .line hr{
+    .line hr, .line2 hr, .line3 hr, .line4 hr{
         width: 30%;
         size: 1px;
         opacity: 0.2515;
@@ -38,11 +38,10 @@ header{
         position: absolute;
         left: 15%;
         z-index: 1;
-        
         // margin-left: 10%;
     }
 
-    .navmenu {
+    .navmenu, .navmenu2, .navmenu3, .navmenu4 {
         width: 60%;
         height: 60%;
         background: rgba(255, 255, 255, 0.1);
@@ -111,7 +110,7 @@ header{
         }
         p {
             color: #D0D6F9;
-            font-family: Barlow;
+            font-family: Barlow, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -124,17 +123,19 @@ header{
         height: 100%;
         // border: 1px solid #FFF;
 
-        .explor-Hover {
-            width: 25rem;
-            height: 25rem;
-            border-radius: 50%;
-            // background-color: rgba(130, 131, 145, 0.626);
-        }
-        .explor-Idle {
-            width: 15rem;
-            height: 15rem;
+        // .explor-Hover {
+        //     width: 25rem;
+        //     height: 25rem;
+        //     border-radius: 50%;
+        //     // background-color: rgba(130, 131, 145, 0.626);
+        // }
+        .explor {
+            width: 17rem;
+            height: 17rem;
             border-radius: 50%;
             background-color: rgb(255, 255, 255);
+            position: absolute;
+            bottom: 10%;
 
             span {
                 color: #0B0D17;
@@ -146,25 +147,363 @@ header{
                 line-height: normal;
                 letter-spacing: 2px;
             }
+            .explor:hover {
+                box-shadow:  0px 0px 0px 50px #ffffff43;
+                // opacity: 0.1036;
+            }
         }
     }
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 920px) {
-    .text-contain {
+.destination-body {
+    background: content-box no-repeat url("../assets/destination/background-destination-desktop.jpg");
+    color: #FFF;
+
+
+  .subtitle {
+    width: 45%;
+    height: 10%;
+    // border: 1px solid;
+
+    p {
+        color: #D0D6F9;
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: normal;
+        letter-spacing: 4.725px; 
+        position: relative;
+        left: 10%;
+        text-transform: uppercase;
+
+        b {
+            color: #a5a4a4;
+        }
+    }
+  }
+
+  .container2 {
+    width: 100%;
+    height: 70%;
+    // border: 1px solid;
+
+    .left-container {
         width: 50%;
         height: 100%;
-        h1 {
+        // border: 1px solid;
+    }
+
+    .right-container {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid;
+
+        ul {
+            width: 50%; 
+            // border: 1px solid;
+         }
+         li {
+            list-style: none;
+            color: #D0D6F9;
+            font-family: "Barlow Condensed";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.7px;
+            text-decoration: none;
+            text-transform: uppercase;
+         }
+
+         h1 {
             color: #FFF;
             font-family: Bellefair;
-            font-size: 10px!important;
+            font-size: 100px;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 400;
             line-height: normal;
-            text-transform: uppercase; 
-            padding: 5% 0;
+            text-transform: uppercase;
+         }
+
+         p {
+            color: #D0D6F9;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+         }
+
+         .down {
+            width: 60%;
+            height: 30%;
+            // border: 1px solid;
+         }
+
+         .downbox {
+            width: 80%;
+            // height: 30%;
+            // border: 1px solid;
+         }
+
+         hr {
+            width: 100%;
+            size: 1px;
+            opacity: 0.2515;
+            background: #383B4B;
+         }
+
+         span {
+            color: #D0D6F9;
+            font-family: "Barlow Condensed";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.362px;
+            text-transform: uppercase;
+         }
+
+         h4 {
+            color: #FFF;
+            font-family: Bellefair;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+         }
+    }
+  }
+}
+
+.crew-body {
+    background: content-box no-repeat url("../assets/crew/background-crew-desktop.jpg");
+    color: #FFF;
+
+    .container3 {
+        width: 100%;
+        height: 80%;
+        // border: 1px solid;
+
+        .textcrew-container {
+            width: 55%;
+            height: 100%;
+            // border: 1px solid;
+
+            .TitleH4 {
+                width: 65%;
+                height: 10%;
+                // border: 1px solid;
+                h4 {
+                    color: #D0D6F9;
+                    font-family: Barlow Condensed;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    line-height: normal;
+                    letter-spacing: 4.725px; 
+                    // position: relative;
+                    // left: 25%;
+    
+                b {
+                    color: #a5a4a4;
+                 }
+                }
+            }
+            
+            .txtContain {
+                width: 65%;
+                height: 60%;
+                // margin-left: 25%;
+                // border: 1px solid;
+                h3 {
+                    color: #FFF;
+                    font-family: Bellefair;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    color: #FFF;
+                    font-family: Bellefair;
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                p {
+                    color: #D0D6F9;
+                    font-family: Barlow;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+            }
+
+            .dots {
+                width: 65%;
+                height: 10%;
+                gap: 25px;
+                // border: 1px solid;
+
+                .dot {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: #a5a4a463;
+                    // border: 1px solid;
+                }
+                .dot1 {
+                    background-color: #FFF;
+                }
+            }
+            
         }
+        .imgcrew-container {
+            width: 45%;
+            height: 100%;
+            // border: 1px solid;
+        }
+        
     }
 }
+
+.technovehi-body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    color: #FFF;
+
+    .TitleH4 {
+        width: 50%;
+        height: 10%;
+        // border: 1px solid;
+        h4 {
+            color: #D0D6F9;
+            font-family: Barlow Condensed;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: normal;
+            letter-spacing: 4.725px; 
+            // position: relative;
+            // left: 25%;
+
+        b {
+            color: #a5a4a4;
+         }
+        }
+    }
+    .container4 {
+        width: 100%;
+        height: 80%;
+        // border: 1px solid #FFF;
+    }
+
+    .lauch-desc {
+        width: 60%;
+        height: 100%;
+        // border: 1px solid;
+
+        .numberboxers {
+        width: 20%;
+        height: 55%;
+        // border: 1px solid;
+
+        .numerbox {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 1px solid;
+
+            span {
+                color: #FFF;
+                text-align: center;
+                font-family: Bellefair;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2px;
+            }
+        }
+        .nb1 {
+            background-color: #FFF;
+            border: none;
+             span {
+                color: #0B0D17;
+             }
+        }
+        }
+        .text-box {
+            width: 60%;
+            height: 55%;
+            margin-left: 5%;
+            // border: 1px solid;
+            span {
+                list-style: none;
+                color: #D0D6F9;
+                font-family: "Barlow Condensed";
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 2.7px;
+                text-transform: uppercase;
+            }
+            h2 {
+                color: #FFF;
+                font-family: Bellefair;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: normal;
+            }
+            p {
+                color: #D0D6F9;
+                font-family: Barlow;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .rocket-img {
+        width: 40%;
+        height: 100%;
+        padding-bottom: 2%;
+        // border: 1px solid;
+    }
+    
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (max-width: 920px) {
+//     .text-contain {
+//         width: 50%;
+//         height: 100%;
+//         h1 {
+//             color: #FFF;
+//             font-family: Bellefair;
+//             font-size: 100px!important;
+//             font-style: normal;
+//             font-weight: 300;
+//             line-height: normal;
+//             text-transform: uppercase; 
+//             padding: 5% 0;
+//         }
+//     }
+// }

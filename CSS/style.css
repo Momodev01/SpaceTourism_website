@@ -74,6 +74,9 @@ header .navmenu, header .navmenu2, header .navmenu3, header .navmenu4 {
   backdrop-filter: blur(40.7742271423px);
   transition: 0.5s ease-in-out;
 }
+header .navmenu .burger, header .navmenu2 .burger, header .navmenu3 .burger, header .navmenu4 .burger {
+  display: none;
+}
 header .navmenu ul, header .navmenu2 ul, header .navmenu3 ul, header .navmenu4 ul {
   width: 100%;
 }
@@ -124,9 +127,12 @@ header .navmenu a, header .navmenu2 a, header .navmenu3 a, header .navmenu4 a {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  padding: 5% 0;
 }
-.container .text-contain p {
+.container .text-contain .txt {
+  width: 70%;
+  height: 25%;
+}
+.container .text-contain .txt p {
   color: #D0D6F9;
   font-family: Barlow, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -262,7 +268,8 @@ header .navmenu a, header .navmenu2 a, header .navmenu3 a, header .navmenu4 a {
 }
 
 .crew-body {
-  background: content-box no-repeat url("../assets/crew/background-crew-desktop.jpg");
+  background: url("../assets/crew/background-crew-desktop.jpg");
+  background-size: cover;
   color: #FFF;
 }
 .crew-body .container3 {
@@ -435,5 +442,224 @@ header .navmenu a, header .navmenu2 a, header .navmenu3 a, header .navmenu4 a {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 920px) and (min-width: 601px) {
+  .index-body {
+    background: url("../assets/home/background-home-tablet.jpg");
+    background-size: cover;
+  }
+  .index-body header {
+    height: 15%;
+  }
+  .index-body header .line hr {
+    display: none;
+  }
+  .index-body header .navmenu {
+    width: 70%;
+    height: 100%;
+  }
+  .index-body header .navmenu .burger {
+    display: none;
+  }
+  .index-body .container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .index-body .container .text-contain {
+    width: 100%;
+    height: 50%;
+    display: flex;
+  }
+  .index-body .container .text-contain h5 {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+  .index-body .container .text-contain h1 {
+    font-size: 130px;
+  }
+  .index-body .container .text-contain .txt {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .index-body .container .text-contain .txt p {
+    text-align: center;
+    font-size: 17px;
+  }
+  .index-body .container .explor-contain {
+    width: 100%;
+    height: 50%;
+  }
+  .index-body .container .explor-contain .explor {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 5%;
+  }
+  .destination-body {
+    max-height: 100vh;
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .destination-body .subtitle {
+    width: 50%;
+    height: 5%;
+  }
+  .destination-body .subtitle p {
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: relative;
+    left: 10%;
+  }
+  .destination-body .container2 {
+    flex-wrap: wrap;
+  }
+  .destination-body .container2 .left-container {
+    width: 100%;
+    height: 40%;
+  }
+  .destination-body .container2 .right-container {
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .destination-body .container2 .right-container h1 {
+    font-size: 80px;
+  }
+  .destination-body .container2 .down {
+    width: 100%;
+  }
+  .destination-body .container2 .down .downbox {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .index-body {
+    max-height: 100vh;
+    background: url("../assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header {
+    height: 15%;
+  }
+  header .line hr {
+    display: none;
+  }
+  header .navmenu .menulist {
+    display: none;
+  }
+  header .burger {
+    position: fixed;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: #FFF;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+  }
+  .container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container .text-contain {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container .text-contain h5 {
+    font-size: 17px;
+    letter-spacing: 4px;
+  }
+  .container .text-contain h1 {
+    font-size: 90px;
+  }
+  .container .text-contain .txt {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .text-contain .txt p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .container .explor-contain {
+    width: 100%;
+    height: 50%;
+  }
+  .container .explor-contain .explor {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 5%;
+  }
+  .destination-body {
+    max-height: 100vh;
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .destination-body .navmenu2 {
+    display: none;
+  }
+  .destination-body .line2 hr {
+    display: none;
+  }
+  .destination-body .subtitle {
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: start;
+  }
+  .destination-body .subtitle p {
+    font-size: 15px;
+    letter-spacing: 4px;
+    left: 0%;
+  }
+  .destination-body .container2 {
+    flex-wrap: wrap;
+  }
+  .destination-body .container2 .left-container {
+    width: 100%;
+    height: 40%;
+  }
+  .destination-body .container2 .right-container {
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .destination-body .container2 .right-container h1 {
+    font-size: 80px;
+  }
+  .destination-body .container2 .down {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+  .destination-body .container2 .down .downbox {
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
